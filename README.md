@@ -19,7 +19,7 @@ Metadata for Ed Gamble records created during the 22-23 academic year.
         |-- gamble2.openrefine.tar.gz
         |-- gamble3.openrefine.tar.gz
         |-- gamble.xpr
-	      |-- open_refine_template.md
+	|-- open_refine_template.md
         |-- splitter.xsl
 |-- original_data
     |-- gamble1.csv
