@@ -17,13 +17,12 @@
 
 {{if(isBlank(cells['title'].value), '', '<titleInfo><title>' + cells["title"].value + '</title></titleInfo>')}} 
 
-{{if(isBlank(cells['Illustrator'].value), '', '<name><namePart>' + cells['Illustrator'].value + '</namePart><role><roleTerm authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/pht">Photographer</roleTerm></role></name>')}}
+{{if(isBlank(cells['Illustrator'].value), '', '<name valueURI='http://id.loc.gov/authorities/names/n95039424'><namePart>' + cells['Illustrator'].value + '</namePart><role><roleTerm authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/pht">Photographer</roleTerm></role></name>')}}
 
-{{if(isBlank(cells['date'].value), '', '<originInfo><dateCreated>' + cells['date'].value + '</dateCreated>') + if(isBlank(cells['date_edtf'].value), '', '<dateCreated encoding="edtf">' + cells['date_edtf'].value + '</dateCreated>') + 
-if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated></originInfo>')}}
+{{if(isBlank(cells['date'].value), '', '<originInfo><dateCreated>' + cells['date'].value + '</dateCreated>') + if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated></originInfo>')}}
 
 
-<physicalDescription><form authority="aat" valueURI="{{cells['form_URI'].value}}">{{cells['form'].value}}</form></physicalDescription>
+<physicalDescription><form authority="aat" valueURI="http://vocab.getty.edu/aat/300123430">cartoons (humorous images)</form></physicalDescription>
 
 {{if(isBlank(cells['note'].value), '', '<note>' + cells['note'].value + '</note>')}}
 
@@ -34,20 +33,21 @@ if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + c
 
 {{if(isBlank(cells['subject3'].value), '', '<subject authority="tgm" valueURI="' + cells['subject3_URI'].value + '"><topic>' + cells['subject3'].value + '</topic></subject>')}}
 
-{{if(isBlank(cells['subject4'].value), '', '<subject authority="tgm" valueURI="' + cells['subject4_URI'].value + '"><topic>' + cells['subject3'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject4'].value), '', '<subject authority="tgm" valueURI="' + cells['subject4_URI'].value + '"><topic>' + cells['subject4'].value + '</topic></subject>')}}
 
-{{if(isBlank(cells['subject_geo2'].value), '', '<subject authority="tgm" valueURI="' + cells['subject_URI'].value + '"><topic>' + cells['subject3'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo2'].value), '', '<subject authority="tgm" valueURI="' + cells['subject_URI'].value + '"><topic>' + cells['subject_geo2'].value + '</topic></subject>')}}
 
-{{if(isBlank(cells['subject_geo3'].value), '', '<subject authority="tgm" valueURI="' + cells['subject2_URI'].value + '"><topic>' + cells['subject3'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo3'].value), '', '<subject authority="tgm" valueURI="' + cells['subject2_URI'].value + '"><topic>' + cells['subject_geo3'].value + '</topic></subject>')}}
 
-{{if(isBlank(cells['subject_geo4'].value), '', '<subject authority="tgm" valueURI="' + cells['subject3_URI'].value + '"><topic>' + cells['subject3'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo4'].value), '', '<subject authority="tgm" valueURI="' + cells['subject3_URI'].value + '"><topic>' + cells['subject_geo4'].value + '</topic></subject>')}}
 
-{{if(isBlank(cells['subject_geo5'].value), '', '<subject authority="tgm" valueURI="' + cells['subject_geo_URI'].value + '"><topic>' + cells['subject3'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo5'].value), '', '<subject authority="tgm" valueURI="' + cells['subject_geo_URI'].value + '"><topic>' + cells['subject_geo5'].value + '</topic></subject>')}}
 
-{{if(isBlank(cells['subjectgeo'].value), '', '<subject authority="tgm" valueURI="' + cells['subject3_URI'].value + '"><topic>' + cells['subject3'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subjectgeo'].value), '', '<subject authority="tgm" valueURI="' + cells['subject3_URI'].value + '"><topic>' + cells['subjectgeo'].value + '</topic></subject>')}}
 
-<typeOfResource>{{cells['typeOfResource'].value}}</typeOfResource>
-{{if(isBlank(cells['typeOfResource2'].value), '', '<typeOfResource>' + cells['typeOfResource2'].value + '</typeOfResource>')}}
+<typeOfResource>still image</typeOfResource>
+
+{{if(isBlank(cells['genre'].value), '', '<subject authority="tgm" valueURI="' + cells['genre_URI'].value + '"><topic>' + cells['genre'].value + '</topic></subject>')}}
 
 <relatedItem displayLabel="Project" type="host"><titleInfo><title>C. S. Boyd Photograph Collection</title></titleInfo></relatedItem>
 
@@ -55,7 +55,7 @@ if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + c
 
 <recordInfo><recordContentSource valueURI="http://id.loc.gov/authorities/names/n87808088">University of Tennessee, Knoxville. Libraries</recordContentSource></recordInfo>
 
-<accessCondition type="use and reproduction" xlink:href="{{cells['rights_URI'].value}}">{{cells['rights'].value}}</accessCondition>
+<accessCondition type="use and reproduction" xlink:href="http://rightsstatements.org/vocab/InC/1.0/">In Copyright</accessCondition>
 </mods>
 
 ```
