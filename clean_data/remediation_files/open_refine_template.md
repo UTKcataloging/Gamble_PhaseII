@@ -19,7 +19,7 @@
 
 {{if(isBlank(cells['Illustrator'].value), '', '<name valueURI="http://id.loc.gov/authorities/names/n95039424"><namePart>' + cells['Illustrator'].value + '</namePart><role><roleTerm authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/ill">Illustrator</roleTerm></role></name>')}}
 
-{{if(isBlank(cells['date'].value), '', '<originInfo><dateCreated>' + cells['date'].value + '</dateCreated>') + if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated></originInfo>')}}
+{{if(isBlank(cells['date'].value), '', '<originInfo><dateCreated>' + cells['date'].value + '</dateCreated><dateCreated encoding="edtf">' + cells['date'].value + '</dateCreated></originInfo>') + if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated></originInfo>')}}
 
 
 <physicalDescription><form authority="aat" valueURI="http://vocab.getty.edu/aat/300123430">cartoons (humorous images)</form>
@@ -37,13 +37,13 @@
 
 {{if(isBlank(cells['subject_geo2'].value), '', '<subject authority="naf" valueURI="' + cells['subject_URI'].value + '"><geographic>' + cells['subject_geo2'].value + '</geographic></subject>')}}
 
-{{if(isBlank(cells['subject_geo3'].value), '', '<subject authority="naf" valueURI="' + cells['subject2_URI'].value + '"><geographic>' + cells['subject_geo3'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo3'].value), '', '<subject authority="naf" valueURI="' + cells['subject2_URI'].value + '"><geographic>' + cells['subject_geo3'].value + '</geographic></subject>')}}
 
-{{if(isBlank(cells['subject_geo4'].value), '', '<subject authority="naf" valueURI="' + cells['subject3_URI'].value + '"><geographic>' + cells['subject_geo4'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo4'].value), '', '<subject authority="naf" valueURI="' + cells['subject3_URI'].value + '"><geographic>' + cells['subject_geo4'].value + '</geographic></subject>')}}
 
-{{if(isBlank(cells['subject_geo5'].value), '', '<subject authority="naf" valueURI="' + cells['subject4_URI'].value + '"><geographic>' + cells['subject_geo5'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo5'].value), '', '<subject authority="naf" valueURI="' + cells['subject4_URI'].value + '"><geographic>' + cells['subject_geo5'].value + '</geographic></subject>')}}
 
-{{if(isBlank(cells['subject_geo'].value), '', '<subject authority="naf" valueURI="' + cells['subject_geo_URI'].value + '"><geographic>' + cells['subject_geo'].value + '</topic></subject>')}}
+{{if(isBlank(cells['subject_geo'].value), '', '<subject authority="naf" valueURI="' + cells['subject_geo_URI'].value + '"><geographic>' + cells['subject_geo'].value + '</geographic></subject>')}}
 
 <typeOfResource>still image</typeOfResource>
 
