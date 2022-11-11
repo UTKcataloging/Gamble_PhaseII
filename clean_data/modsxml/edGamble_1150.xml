@@ -5,6 +5,9 @@
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
    <identifier type="local">edGamble_1150</identifier>
+   <titleInfo>
+      <title>Well...You can't declare as null and void...We haven't had your trial, yet!</title>
+   </titleInfo>
    <name valueURI="http://id.loc.gov/authorities/names/n95039424">
       <namePart>Gamble, Ed</namePart>
       <role>
