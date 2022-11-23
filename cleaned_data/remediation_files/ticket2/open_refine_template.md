@@ -19,7 +19,9 @@
 
 {{if(isBlank(cells['Illustrator'].value), '', '<name valueURI="http://id.loc.gov/authorities/names/n95039424"><namePart>' + cells['Illustrator'].value + '</namePart><role><roleTerm authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/ill">Illustrator</roleTerm></role></name>')}}
 
-{{if(isBlank(cells['date'].value), '', '<originInfo><dateCreated>' + cells['date'].value + '</dateCreated><dateCreated encoding="edtf">' + cells['date'].value + '</dateCreated></originInfo>') + if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated></originInfo>')}}
+<originInfo>
+{{if(isBlank(cells['date'].value), '', '<dateCreated>' + cells['date'].value + '</dateCreated><dateCreated encoding="edtf">' + cells['date'].value + '</dateCreated></originInfo>') + if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated>') + if(isBlank(cells['Newspaper'].value), '', '<publisher>' + cells['Newspaper'].value + '</publisher>')}}
+</originInfo>
 
 
 <physicalDescription><form authority="aat" valueURI="http://vocab.getty.edu/aat/300123430">cartoons (humorous images)</form>
@@ -50,8 +52,6 @@
 {{if(isBlank(cells['genre'].value), '', '<genre' + if(isBlank(cells['genre_URI'].value), '', ' valueURI="' + cells['genre_URI'].value + '"') + '>' + cells['genre'].value + '</genre>')}}
 
 <relatedItem displayLabel="Project" type="host"><titleInfo><title>Ed Gamble Cartoon Collection</title></titleInfo></relatedItem>
-
-{{if(isBlank(cells['Newspaper'].value),'', '<relatedItem type="host"><titleInfo><title>' + cells['Newspaper'].value + '</title></titleInfo></relatedItem>')}}
 
 <location><physicalLocation valueURI="http://id.loc.gov/authorities/names/no2014027633">University of Tennessee, Knoxville. Special Collections</physicalLocation></location>
 
