@@ -20,7 +20,7 @@
 {{if(isBlank(cells['Illustrator'].value), '', '<name valueURI="http://id.loc.gov/authorities/names/n95039424"><namePart>' + cells['Illustrator'].value + '</namePart><role><roleTerm authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/ill">Illustrator</roleTerm></role></name>')}}
 
 <originInfo>
-{{if(isBlank(cells['date'].value), '', '<dateCreated>' + cells['date'].value + '</dateCreated><dateCreated encoding="edtf">' + cells['date'].value + '</dateCreated></originInfo>') + if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated>') + if(isBlank(cells['Newspaper'].value), '', '<publisher>' + cells['Newspaper'].value + '</publisher>')}}
+{{if(isBlank(cells['date'].value), '', '<dateCreated>' + cells['date'].value + '</dateCreated><dateCreated encoding="edtf">' + cells['date'].value + '</dateCreated>') + if(isBlank(cells['date_approximate'].value), '', '<originInfo><dateCreated>' + cells['date_approximate'].value + '</dateCreated>') + if(isBlank(cells['date_approx_start'].value), '', '<dateCreated encoding="edtf" point="start">' + cells['date_approx_start'].value + '</dateCreated><dateCreated encoding="edtf" point="end">' + cells['date_approx_end'].value + '</dateCreated>') + if(isBlank(cells['Newspaper'].value), '', '<publisher>' + cells['Newspaper'].value + '</publisher>')}}
 </originInfo>
 
 
