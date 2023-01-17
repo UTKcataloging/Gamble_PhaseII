@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+   <identifier type="local">edGamble_5601</identifier>
+   <titleInfo>
+      <title>Excuse me! Where is everybody?</title>
+   </titleInfo>
+   <name valueURI="http://id.loc.gov/authorities/names/n95039424">
+      <namePart>Gamble, Ed</namePart>
+      <role>
+         <roleTerm authority="marcrelator"
+                   valueURI="http://id.loc.gov/vocabulary/relators/ill">Illustrator</roleTerm>
+      </role>
+   </name>
+   <originInfo>
+      <dateCreated>2006</dateCreated>
+      <dateCreated encoding="edtf">2006</dateCreated>
+      <publisher>Florida Times Union</publisher>
+   </originInfo>
+   <physicalDescription>
+      <form authority="aat" valueURI="http://vocab.getty.edu/aat/300123430">cartoons (humorous images)</form>
+      <extent>14 x 10 inches</extent>
+   </physicalDescription>
+   <subject authority="lcsh"
+            valueURI="http://id.loc.gov/authorities/names/n79021345">
+      <topic>United Nations</topic>
+   </subject>
+   <subject authority="naf"
+            valueURI="http://id.loc.gov/authorities/names/n80034964">
+      <geographic>Darfur (Sudan)</geographic>
+   </subject>
+   <subject authority="naf"
+            valueURI="http://id.loc.gov/authorities/names/n79022301-781">
+      <geographic>Sudan</geographic>
+   </subject>
+   <typeOfResource>still image</typeOfResource>
+   <genre valueURI="http://id.loc.gov/authorities/subjects/sh2004003485">International relations--Caricatures and cartoons</genre>
+   <relatedItem displayLabel="Project" type="host">
+      <titleInfo>
+         <title>Ed Gamble Cartoon Collection</title>
+      </titleInfo>
+   </relatedItem>
+   <location>
+      <physicalLocation valueURI="http://id.loc.gov/authorities/names/no2014027633">University of Tennessee, Knoxville. Special Collections</physicalLocation>
+   </location>
+   <recordInfo>
+      <recordContentSource valueURI="http://id.loc.gov/authorities/names/n87808088">University of Tennessee, Knoxville. Libraries</recordContentSource>
+   </recordInfo>
+   <accessCondition type="use and reproduction"
+                    xlink:href="http://rightsstatements.org/vocab/InC/1.0/">In Copyright</accessCondition>
+</mods>
